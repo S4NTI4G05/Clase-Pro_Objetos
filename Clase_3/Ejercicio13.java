@@ -72,6 +72,6 @@ public class Ejercicio13 {
         for (int i = 0; i < menores.length; i++) {
             System.out.print(menores[i] + " ");
         }
-
+        System.out.println("HOLA SOY SANTIAGO Y ESTO ES UNA PREUBA DESDE VISUAL");
     }
 }
