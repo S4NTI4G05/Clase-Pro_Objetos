@@ -2,7 +2,7 @@ package Clase_3;
 
 public class Ejercicio13 {
     public static void main(String[] args) {
-   /*
+        /*
          * Dado un arreglo A de N elementos, almacenar los elementos mayores y menores
          * que la media, almacenarlos en arreglos diferentes.
          * 
@@ -72,6 +72,5 @@ public class Ejercicio13 {
         for (int i = 0; i < menores.length; i++) {
             System.out.print(menores[i] + " ");
         }
-        System.out.println("HOLA SOY SANTIAGO Y ESTO ES UNA PREUBA DESDE VISUAL");
     }
 }
