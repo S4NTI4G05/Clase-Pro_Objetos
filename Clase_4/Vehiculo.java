@@ -1,7 +1,5 @@
 package Clase_4;
 
-import javax.print.DocFlavor.STRING;
-
 public class Vehiculo {
     
     // Atributos de la clase
@@ -13,8 +11,8 @@ public class Vehiculo {
     private String portencia;
     
     /*
-     * Contructor de la clase -> permite inicializar el objeto.
-     * El contructor de la clase reconoce porque tiene el mismo nombre de la clase
+     * Constructor de la clase -> permite inicializar el objeto.
+     * El constructor de la clase reconoce porque tiene el mismo nombre de la clase
      */
 
     //Atributos
