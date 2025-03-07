@@ -15,6 +15,7 @@ public class Moto {
     this.placa = placa;
     this.cilindraje = cilindraje;
     this.tiempo = tiempo;
+    
     }
 
     //Get es el que guarda atributo y lo lee
