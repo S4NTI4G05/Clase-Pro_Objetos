@@ -2,16 +2,14 @@ package Momento_1;
 public class Moto {
 
     //Atritutos de la clase
-    private String marca;
     private String placa;
     private double cilindraje;
     private int tiempo;
 
     //Contructor 
-    public Moto (String marca, String placa, double cilindraje, int tiempo){
+    public Moto (String placa, double cilindraje, int tiempo){
 
     //Atributos
-    this.marca = marca;
     this.placa = placa;
     this.cilindraje = cilindraje;
     this.tiempo = tiempo;
@@ -19,9 +17,6 @@ public class Moto {
     }
 
     //Get es el que guarda atributo y lo lee
-    public String getMarca(){
-        return marca;
-    }
     public String getPlaca(){
         return placa;
     }
@@ -33,16 +28,25 @@ public class Moto {
     }
 
     //Set es el que modifica y asigna el valor al atributo
-    public void setMarca(String marca){
-        this.marca = marca;
-    }
     public void setPlaca(String placa){
         this.placa = placa;
     }
-    public void setMarca(double cilindraje){
+    public void setCilindraje(double cilindraje){
         this.cilindraje = cilindraje;
     }
-    public void setMarca(int tiempo){
+    public void setTiempo(int tiempo){
         this.tiempo = tiempo;
     }
+
+    // Método para calcular el costo del parqueo
+    public double calcularCosto() {
+        if (tiempo <= 30) {
+            return 0; // Primeros 30 minutos son gratis
+        } else if (tiempo <= 60) {
+            return 800; // Costo desde 31 minutos a 60 minutos
+        } else {
+            return 2000; // Costo para más de 60 minutos
+        }
+    }
+
 }
