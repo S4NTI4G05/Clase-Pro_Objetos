@@ -37,16 +37,5 @@ public class Moto {
     public void setTiempo(int tiempo){
         this.tiempo = tiempo;
     }
-
-    // Método para calcular el costo del parqueo
-    public double calcularCosto() {
-        if (tiempo <= 30) {
-            return 0; // Primeros 30 minutos son gratis
-        } else if (tiempo <= 60) {
-            return 800; // Costo desde 31 minutos a 60 minutos
-        } else {
-            return 2000; // Costo para más de 60 minutos
-        }
-    }
-
+    
 }
