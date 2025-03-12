@@ -2,40 +2,40 @@ package Momento_1;
 public class Moto {
 
     //Atritutos de la clase
-    private String placa;
-    private double cilindraje;
-    private int tiempo;
+    private String Placa;
+    private double Cilindraje;
+    private int Tiempo;
 
     //Contructor 
-    public Moto (String placa, double cilindraje, int tiempo){
+    public Moto (String Placa, double Cilindraje, int Tiempo){
 
     //Atributos
-    this.placa = placa;
-    this.cilindraje = cilindraje;
-    this.tiempo = tiempo;
+    this.Placa = Placa;
+    this.Cilindraje = Cilindraje;
+    this.Tiempo = Tiempo;
     
     }
 
     //Get es el que guarda atributo y lo lee
     public String getPlaca(){
-        return placa;
+        return Placa;
     }
     public double getCilindraje(){
-        return cilindraje;
+        return Cilindraje;
     }
     public int getTiempo(){
-        return tiempo;
+        return Tiempo;
     }
 
     //Set es el que modifica y asigna el valor al atributo
-    public void setPlaca(String placa){
-        this.placa = placa;
+    public void setPlaca(String Placa){
+        this.Placa = Placa;
     }
-    public void setCilindraje(double cilindraje){
-        this.cilindraje = cilindraje;
+    public void setCilindraje(double Cilindraje){
+        this.Cilindraje = Cilindraje;
     }
-    public void setTiempo(int tiempo){
-        this.tiempo = tiempo;
+    public void setTiempo(int Tiempo){
+        this.Tiempo = Tiempo;
     }
-    
+
 }
