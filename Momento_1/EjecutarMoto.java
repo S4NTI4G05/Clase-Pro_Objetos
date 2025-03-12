@@ -3,50 +3,46 @@ package Momento_1;
 import java.util.Scanner;
 
 public class EjecutarMoto {
-
-    public static Moto[] Bajocc = new Moto[20]; // Parqueadero Bajo Cilindraje
-    public static Moto[] Altocc = new Moto[10]; // Parqueadero Alto Cilindraje
-
-    public static Scanner entrada = new Scanner(System.in); // Se importa el Scanner para la toma y captura de datos
+    //Arreglo que designa los espacios dde los parqueaderos
+    public static Moto [] Bajocc = new Moto[20]; 
+    public static Moto [] Altocc = new Moto[10];
+    //Se usa Scanner para la toma y captura de datos
+    public static Scanner entrada = new Scanner(System.in);
 
     public static void main(String[] args) {
-        
-        // Menú de registro
-        int opcion;
+        //Se crea el menu usando Do While y Shitch
+
+    int opcion;
         do {
-            System.out.println("---  MENU PRINCIPAL  ---");
-            System.out.println("1. Registre una moto de Bajo Cilindraje");
-            System.out.println("2. Registre una moto de Alto Cilindraje");
-            System.out.println("3. Calcule y genere su cobro");
-            System.out.println("4. Mostrar estado de los parqueaderos");
-            System.out.println("5. Salir del menu");
-            System.out.print("SELECCIONE ALGUNA OPCION: ");
+            System.out.println("---  MENU PRINCILPAL ---");
+            System.out.println("1. Resgistrar moto de bajo cilidraje");
+            System.out.println("2. Resgistrar moto de alto cilidraje");
+            System.out.println("3. Cobro del parqueadero");
+            System.out.println("4. Mostar estado del parqueadero");
+            System.out.println("5. Cerrar el menu");
+            System.out.println("Seleccione alguna de las 5 opciones");
             opcion = entrada.nextInt();
 
             switch (opcion) {
                 case 1:
-                    registrarMoto(Bajocc, 250, "Bajo Cilindraje");
-                    break;
+                    registrarMoto(Bajocc,250, "Moto de bajo cilindraje");  
+                break;
                 case 2:
-                    registrarMoto(Altocc, 400, "Alto Cilindraje");
-                    break;
-                case 3:
-                    cobrarTarifa();
-                    break;
+                registrarMoto(Alto,400, "Moto de Alto cilindraje");
+                break;
+                case 3: 
+                cobrarTarifa();
+                break;
                 case 4:
-                    mostrarEstadoParqueadero();
-                    break;
+                mostrarEstadoParqueadero();
+                break;
                 case 5:
-                    System.out.println("Cerrando la aplicacion...");
-                    break;
+                System.out.println("---  CERRANDO MENU  ---");
+                break;
                 default:
-                    System.out.println("Opcion no valida. Intente de nuevo");
-                    break;
+                System.out.println("Opcion no valida, ingrese una de las 5 opciones");
             }
-        } while (opcion != 5);
+        } while (opcion !5);
     }
-
-    
-
-
+    //
 }
