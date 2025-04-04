@@ -1,11 +1,11 @@
 package Clase_9;
 
-public class ClienteClase9 {
+public class Cliente {
     
     private String cedula;
     private String nombre;
 
-    public ClienteClase9 (String cedula, String nombre){
+    public Cliente (String cedula, String nombre){
         this.cedula = cedula;
         this.nombre = nombre;
     }
