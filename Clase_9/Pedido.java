@@ -28,6 +28,20 @@ public class Pedido {
     public int getnumeroTarjetaCredito(){
         return numeroTarjetaCredito;
     }
+
+    public Cliente setCliente(){
+        return cliente;
+    }
+    public Producto[] setProducto(){
+        return producto;
+    }
+    public Date setfecha(){
+        return fecha;
+    }
+    public int setnumeroTarjetaCredito(){
+        return numeroTarjetaCredito;
+    }
+
 }
 
 
