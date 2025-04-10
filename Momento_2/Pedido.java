@@ -1,50 +1,40 @@
-package Clase_9;
+package Momento_2;
 
 import java.sql.Date;
 
-public class Pedido {
-    
+public class Pedido extends Producto {
+
+    //Atributos
     private Cliente cliente;
     private Producto[] producto;
     private Date fecha;
     private int numeroTarjetaCredito;
 
-    public Pedido (Cliente cliente, Producto[] producto, Date fecha, int numeroTarjetaCredito){
+    //Constructor
+    public Pedido(Cliente cliente, Producto[] producto, Date fecha, int numeroTarjetaCredito , int numero, String nombre, String referencia, double ancho, double alto, double precio) {
+        super(numero, nombre, precio, referencia, ancho, alto); // Llamada al constructor de la clase padre
         this.cliente = cliente;
         this.producto = producto;
         this.fecha = fecha;
         this.numeroTarjetaCredito = numeroTarjetaCredito;
     }
 
+    //Metodos
     public Cliente getCliente(){
         return cliente;
     }
+
     public Producto[] getProducto(){
         return producto;
     }
-    public Date getfecha(){
+
+    public Date getFecha(){
         return fecha;
     }
+
     public int getnumeroTarjetaCredito(){
         return numeroTarjetaCredito;
     }
-
-    public Cliente setCliente(){
-        return cliente;
-    }
-    public Producto[] setProducto(){
-        return producto;
-    }
-    public Date setfecha(){
-        return fecha;
-    }
-    public int setnumeroTarjetaCredito(){
-        return numeroTarjetaCredito;
-    }
-
+    
+    
 }
-
-
-
-
-
