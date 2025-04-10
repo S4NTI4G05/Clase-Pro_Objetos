@@ -4,14 +4,14 @@ public class Foto {
     private String fichero;
     private String fotoColor;
     private String fotoBlancoNegro;
-    private int nuemeoCopias;
+    private int numeroCopias;
 
     ///Constructor
-    public Foto(String fichero, String fotoColor, String fotoBlancoNegro, int nuemeoCopias) {
+    public Foto(String fichero, String fotoColor, String fotoBlancoNegro, int numeroCopias) {
         this.fichero = fichero;
         this.fotoColor = fotoColor;
         this.fotoBlancoNegro = fotoBlancoNegro;
-        this.nuemeoCopias = nuemeoCopias;
+        this.numeroCopias = numeroCopias;
     }
 
     //Metodos
@@ -33,14 +33,14 @@ public class Foto {
     public String getFotoBlancoNegro() {
         return fotoBlancoNegro;
     }
-    public void setNuemeoCopias(int nuemeoCopias) {
-        this.nuemeoCopias = nuemeoCopias;
+    public void setNuemeoCopias(int numeroCopias) {
+        this.numeroCopias = numeroCopias;
     }
     public int getNuemeoCopias() {
-        return nuemeoCopias;
+        return numeroCopias;
     }
     public String toString() {
-        return "Foto{" + "fichero=" + fichero + ", fotoColor=" + fotoColor + ", fotoBlancoNegro=" + fotoBlancoNegro + ", nuemeoCopias=" + nuemeoCopias + '}';
+        return "Foto{" + "fichero=" + fichero + ", fotoColor=" + fotoColor + ", fotoBlancoNegro=" + fotoBlancoNegro + ", numeroCopias=" + numeroCopias + '}';
     }
 
 }
